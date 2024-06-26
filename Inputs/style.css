@@ -1,0 +1,135 @@
+/* Global reset and smooth scroll behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar and list styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+    padding-right: 20px;
+  }
+  
+  .navbar {
+    min-height: 10vh;
+  }
+  
+  /* Sections and inner content */
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0088cc; /* fallback color */
+    background-image: linear-gradient(rgba(0, 136, 204, 0.8), rgba(0, 136, 204, 0.5));
+    color: white;
+  }
+  
+  section .inner {
+    padding-top: 10vh;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  #home h1,
+  #about h1,
+  #education h1,
+  #hobbies h1,
+  #skills h1,
+  #contact h1 {
+    font-size: 2.625rem; /* 42px converted to rem */
+  }
+  
+  /* Home section */
+  #home {
+    background-image: linear-gradient(rgba(0, 136, 204, 0.8), rgba(0, 136, 204, 0.5));
+  }
+  
+  #home h1 {
+    font-size: 3.5rem; /* Specific size for home h1 */
+  }
+  
+  #home img {
+    width: 250px;
+    height: auto;
+  }
+  
+  /* Image sizes for education and hobbies */
+  #education img,
+  #hobbies img {
+    width: 200px;
+    height: 150px;
+  }
+  
+  /* Background colors for other sections */
+  #about {
+    background-image: linear-gradient(rgba(251, 188, 30, 0.8), rgba(153, 160, 22, 0.5));
+  }
+  
+  #education {
+    background-image: linear-gradient(rgba(231, 75, 75, 0.8), rgba(135, 40, 40, 0.5));
+  }
+  
+  #hobbies {
+    background-image: linear-gradient(rgba(78, 231, 75, 0.8), rgba(78, 231, 75, 0.5));
+  }
+  
+  #skills {
+    background-image: linear-gradient(rgba(163, 94, 59, 0.8), rgba(102, 61, 61, 0.5));
+  }
+  
+  #contact {
+    background-image: linear-gradient(rgba(102, 61, 61, 0.8), rgba(102, 61, 61, 0.5));
+  }
+  
+  /* Skills section */
+  #skills .cover {
+    background-color: #663d3d;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  
+  #skills li,
+  #contact p {
+    font-size: 1.625rem; /* 26px converted to rem */
+  }
+  
+  /* Profile Picture in mobile */
+  #home img {
+    width: 300px;
+    border-radius: 50%;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 320px) and (max-width: 667px) {
+    /* Adjustments for smaller screens */
+    #skills li,
+    #contact p {
+      font-size: 1rem; /* 18px converted to rem */
+    }
+  
+    /* Profile Picture in mobile */
+    #home img {
+      width: 250px;
+      border-radius: 50%;
+    }
+  
+    #education img,
+    #hobbies img {
+      width: 100px;
+    }
+  
+    #about p {
+      font-size: 0.9375rem; /* 15px converted to rem */
+      line-height: 1.5; /* Adjusted line height for smaller screens */
+    }
+  }
+  
